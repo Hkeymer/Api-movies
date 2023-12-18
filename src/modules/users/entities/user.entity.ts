@@ -25,7 +25,7 @@ export class User {
   @Column({ nullable: false, select: false })
   password: string;
 
-  @Column({ type: 'enum', enum: Role, default: Role.ADMIN })
+  @Column({ type: 'enum', enum: Role, default: Role.USER })
   role: Role;
 
   @CreateDateColumn()
